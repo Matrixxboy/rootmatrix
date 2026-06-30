@@ -1,0 +1,89 @@
+[project]
+name = "rootmatrix"
+version = "0.1.0"
+description = "Universal token optimization, intelligent context management, and codebase navigation for AI coding assistants, IDEs, and MCP servers."
+readme = "rootmatrix.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Utsav Lankapati", email = "matrix.utsav.lankapati@gmail.com" }
+]
+
+maintainers = [
+    { name = "Utsav Lankapati", email = "matrix.utsav.lankapati@gmail.com" }
+]
+
+keywords = [
+    "ai",
+    "llm",
+    "mcp",
+    "fastmcp",
+    "agent",
+    "agentic-ai",
+    "context",
+    "context-management",
+    "token-optimization",
+    "prompt-engineering",
+    "rag",
+    "developer-tools",
+    "code-analysis",
+    "ide",
+    "productivity"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Environment :: Console"
+]
+
+dependencies = [
+    "fastmcp>=2.14.0",
+    "click>=8.1.0",
+    "tiktoken>=0.7.0",
+    "tree-sitter>=0.22.0",
+    "tree-sitter-python",
+    "tree-sitter-javascript",
+    "tree-sitter-typescript",
+    "chromadb>=0.4.0",
+    "watchdog>=4.0.0",
+    "rich>=13.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/Matrixxboy/rootmatrix"
+Repository = "https://github.com/Matrixxboy/rootmatrix"
+Issues = "https://github.com/Matrixxboy/rootmatrix/issues"
+Documentation = "https://github.com/Matrixxboy/rootmatrix#readme"
+
+[project.scripts]
+rootmatrix = "rootmatrix.cli:main"
+
+[build-system]
+requires = [
+    "setuptools>=69",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rootmatrix*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra"
