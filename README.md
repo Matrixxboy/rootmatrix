@@ -1,7 +1,6 @@
 <div align="center">
-<img src="public/logo.png">
+<img src="public/logo.png" width="600" >
 
-# 🧠 RootMatrix
 **Universal Token Optimization & Context Control for AI IDEs**
 Force AI agents to navigate your codebase surgically, slash token overhead, and eliminate hallucinations.
 
